@@ -58,7 +58,7 @@ html {
 .banner .p-center{
   
     padding-bottom: 39px;
-    width: 65%;
+    width: 45%;
     margin: auto;
     font-family: "Lato Hairline";
     font-size: 45px;
@@ -74,12 +74,15 @@ html {
     padding: 16px 29px;
     border-radius: 24px;
     background-color: #9C27B0;
+    border: 1px solid #9C27B0;
     font-weight: 600;
     letter-spacing: 1px;
     transition: all .5s ease;
 }
 .banner .purchase a:hover{
-    background-color: rgba(156, 39, 176, 0.4);
+    border: 1px solid #2196F3;
+    color: #2196F3;
+    background-color: white;
 }
 .container0{
     background-color: #FAFAFA;
@@ -102,6 +105,9 @@ html {
     display: flex;
     justify-content: center;
 }
+.users .imgs img{
+    margin-left: 18px;
+}
 .container1{
     box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.1);
 }
@@ -120,9 +126,10 @@ html {
     text-decoration: none;
     font-weight: 600;
     font-size: 12px;
-    margin-left: 15px;
+    margin-left: 30px;
     color: #191515;
     opacity: 0.6;
+    transition: all 0.3s ease;
 }
 .container nav .nav-links ul li:first-child a{
     color: #2196F3;
@@ -365,6 +372,10 @@ html {
   line-height: 2.154;
   text-align: left;
 }
+.slick-slide{
+    border: none;
+    outline: none;
+}
 .slick-dots {
     display: flex;
     justify-content: center;
@@ -517,7 +528,7 @@ html {
    
   font-size: 13px;
   font-family: "Merriweather";
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.8);
   line-height: 2.308;
   text-align: center;
  font-weight: bold;
@@ -526,6 +537,7 @@ html {
     margin-top: 30px;
     text-decoration: none;
     background-color: #9C27B0;
+    border: 1px solid #9C27B0;
     border-radius: 24px;
     text-transform: uppercase;
     font-weight: bold;
@@ -535,7 +547,8 @@ html {
     transition: all .5s ease;
 }
 #pricing .cards .card a:hover{
-    background-color: rgba(156, 39, 176, 0.4);
+    color: #9C27B0;
+    background-color: white;
 }
 
 
@@ -595,30 +608,23 @@ html {
     margin-bottom: 29px;
     height: 146px;
 }
-.contact .contact-form form textarea::placeholder{
-    font-size: 13px;
-   font-family: "Lato";
-    line-height: 1.501;
-    text-align: left;
-  font-weight: bold;
-  color: rgba(42, 45, 46, 0.4);
-}
 
 .contact .contact-form form button{
     color: white;
     font-weight: bold;
     padding: 15px 25px;
+    border: 1px solid #9C27B0;
     background-color: #9C27B0;
     width: 133px;
     height: 48px;
     border-radius: 24px;
-    border: none;
     text-transform: uppercase;
     cursor: pointer;
     transition: all .5s ease;
 }
 .contact .contact-form form button:hover{
-    background-color: rgba(156, 39, 176, 0.6);
+    background-color: white;
+    color: #9C27B0;
 }
 .contact .contact-info{
     width: 35%
@@ -681,6 +687,12 @@ footer p{
 
 
 @media screen and (max-width: 1350px){
+    .users .imgs img{
+        margin-left: 0px;
+    }
+    .container nav .nav-links ul li a{
+        margin-left: 20px;
+    }
    #features{
        width: 80%;
    }
@@ -691,6 +703,11 @@ footer p{
   
 }
 @media screen and (max-width: 1055px){
+    .banner .p-center{
+        padding-bottom: 39px;
+        width: 75%;
+       
+    }
     .container{
         width: 80%;
     }
@@ -777,7 +794,7 @@ footer p{
     }
 }
 
-@media screen and (max-width: 704px){
+@media screen and (max-width: 780px){
 
     .banner .purchase{
         padding-bottom: 181px;
@@ -806,7 +823,9 @@ footer p{
           margin: 0px;
           margin-top: 5px;
     }
-       
+    .container nav .nav-links ul li a{
+        margin-left: 0px;
+    }  
     .container nav .nav-links.active {
        display: block;
        text-align: center;
@@ -914,7 +933,7 @@ footer p{
         height: unset;
         border: none !important;
         box-shadow: none;
-        max-width: 250px !important;
+        max-width: 250px !important;   
     }
     footer{
         padding-bottom: 50px;
